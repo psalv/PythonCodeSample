@@ -8,8 +8,8 @@ def home():
     return "Hi.<br><br>" \
            "This is a coding sample written for Lyft by Paul Salvatore.<br><br>" \
            "It's functionality can be tested with the following command line command:<br><br><br>" \
-           "<b>curl -X POST http://pythoncodingsample.herokuapp.com/test --data '{\"x\": 4, \"y\": 2}'" \
-           "-H 'Content-Type: application/json'</b>"
+           "<b>curl -X POST https://pythoncodingsample.herokuapp.com/test --data '{\"x\": 4, \"y\": 2}' -H " \
+           "'Content-Type: application/json'</b>"
 
 
 @app.route('/test', methods=['POST'])
